@@ -1,0 +1,52 @@
+body {
+    background-color: #cceeff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: popIn 0.8s ease;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f99;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
